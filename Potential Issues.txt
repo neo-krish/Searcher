@@ -1,0 +1,12 @@
+Potential Issues
+----------------
+
+1. Some hospitals do not have CDM in their filenames.
+	e.g. 2005 -> Alhambra Hospital, 2005 -> Alvarado Parkway Institute, 2005 -> Bakersfield Heart Hospital
+2. Some hospitals have CMD in their file name in both the master and top 25 file
+	e.g. 2005 -> Antelope Valley Hospital
+3. Some hospitals may have CMD in each excel worksheet's name ( Current algorithm locks in on the first sheet with CDM )
+	e.g. 2005 -> Alameda Hospital
+4. Merged Cells pose a problem. Hard to identify. Would add quite a programming / processing overhead.
+	e.g. 2005 -> Alameda Hospital
+5. Some excel sheets are encrypted. Program fails if it encounters an encrypted file.
